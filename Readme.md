@@ -19,6 +19,7 @@ ngrams get_ngrams
 ## Benchmarking and Comparing with Python
 
 Putting the Gutenberg Corpus into **arr** and comparing NLTK (Python) N-gram speed and my implementation.
+Number of tokens - 23140
 
 ``` Pharo
 ngrams := Ngrams new.
