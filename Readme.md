@@ -31,6 +31,8 @@ ngrams nvalue: 5.
 Runtime - 00.002 Seconds
 ```
 
+Comparing with generation using NLTK python
+
 ``` Python
 tokens = gutenberg.words('shakespeare-macbeth.txt')
 start = time.time()
@@ -40,6 +42,17 @@ runtime = end - start
 ```
 ``` Python
 Runtime - 0.054718017578125 Seconds
+```
+
+Comparing with generation using pure python (zip function)
+``` Python
+def generate_ngrams(tokens, n):    
+    ngrams = zip(*[tokens[i:] for i in range(n)])
+    return [" ".join(ngram) for ngram in ngrams]
+```
+
+``` Python
+Runtime - 0.012454032897949219 Seconds
 ```
 Generation of **arr** was done using python as I was unable to load the tokenized gutenberg corpus in Pharo.
 ``` Python
