@@ -3,6 +3,11 @@
 Clone this Repository - git clone <clone with https link>.
 This Package was created using the Monticello Browser. To load the package go into the Monticello Browser (Under Tools on topbar or Ctrl+O+P). Press the +repository button and select directory under that. Then find the cloned repository and add that. You will then be able to load the .mcz format packages and use them.
 
+## Functionality
+### N-grams
+An n-gram is a continuous sequence of n items of a given text.
+Example - 2-grams of sentence "This is a test" would be ['this is','is a','a test']
+
 ## Sample Usage for Ngrams Class
 
 ``` Pharo
