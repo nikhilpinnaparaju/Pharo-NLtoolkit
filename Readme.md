@@ -1,3 +1,13 @@
+## Loading Into Pharo
+
+Clone this Repository - git clone <clone with https link>.
+This Package was created using the Monticello Browser. To load the package go into the Monticello Browser (Under Tools on topbar or Ctrl+O+P). Press the +repository button and select directory under that. Then find the cloned repository and add that. You will then be able to load the .mcz format packages and use them.
+
+## Functionality
+### N-grams
+An n-gram is a continuous sequence of n items of a given text.
+Example - 2-grams of sentence "This is a test" would be ['this is','is a','a test']
+
 ## Sample Usage for Ngrams Class
 
 ``` Pharo
@@ -31,6 +41,8 @@ ngrams nvalue: 5.
 Runtime - 00.002 Seconds
 ```
 
+Comparing with generation using NLTK python
+
 ``` Python
 tokens = gutenberg.words('shakespeare-macbeth.txt')
 start = time.time()
@@ -40,6 +52,17 @@ runtime = end - start
 ```
 ``` Python
 Runtime - 0.054718017578125 Seconds
+```
+
+Comparing with generation using pure python (zip function)
+``` Python
+def generate_ngrams(tokens, n):    
+    ngrams = zip(*[tokens[i:] for i in range(n)])
+    return [" ".join(ngram) for ngram in ngrams]
+```
+
+``` Python
+Runtime - 0.012454032897949219 Seconds
 ```
 Generation of **arr** was done using python as I was unable to load the tokenized gutenberg corpus in Pharo.
 ``` Python
