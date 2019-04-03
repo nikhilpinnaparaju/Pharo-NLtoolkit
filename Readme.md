@@ -5,7 +5,7 @@ This Package was created using the Monticello Browser. To load the package go in
 
 ## Functionality
 ### N-grams
-An n-gram is a continuous sequence of n items of a given text.
+An n-gram is a continuous sequence of n items of a given text. <br>
 Example - 2-grams of sentence "This is a test" would be ['this is','is a','a test']
 
 ## Sample Usage for Ngrams Class
