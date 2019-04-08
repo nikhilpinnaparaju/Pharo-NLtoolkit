@@ -6,4 +6,4 @@ This Package was created using the Monticello Browser. To load the package go in
 ## Functionality
 ### (<a href='https://github.com/nikhilpinnaparaju/Pharo-NLtoolkit/blob/master/N-grams/Readme.md'> Link to Readme for N-grams Usage</a>)
 ### (<a href='https://github.com/nikhilpinnaparaju/Pharo-NLtoolkit/blob/master/TF-IDF/Readme.md'> Link to Readme for TF-IDF Usage</a>)
-### (<a href='https://github.com/nikhilpinnaparaju/Pharo-NLtoolkit/blob/master/LinkedList/Readme.md'> Link to Readme for TF-IDF Usage</a>)
+### (<a href='https://github.com/nikhilpinnaparaju/Pharo-NLtoolkit/blob/master/LinkedList/Readme.md'> Link to Readme for LinkedList Usage</a>)
