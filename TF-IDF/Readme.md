@@ -18,16 +18,12 @@ arr2 := #('The' 'truck' 'is' 'driven' 'on' 'the' 'highway').
 corp := OrderedCollection new.
 corp add: arr1; add: arr2.
 
-
 tf corpus: corp.
-tf build_vocab.
-tf idf: 'car'.
-sol := tf tfidfvector: (tf corpus at: 1).
-Transcript show: sol.
+tf build_tfidf
 ```
 
 ## Sample Output
 
 ``` Pharo
-a Dictionary('The'->0.0 'car'->0.04300428509485445 'driven'->0.0 'is'->0.0 'on'->0.0 'road'->0.04300428509485445 'the'->0.0 )
+a Dataframe
 ```
